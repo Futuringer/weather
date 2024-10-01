@@ -1,0 +1,21 @@
+$font-family: 'Roboto', sans-serif;
+$color-text-default: #2a2e33;
+$color-border-default: #e1e7ec;
+$color-border-default-hover: #8c97a7;
+$color-active: #2684ff;
+$color-error: #ff4c4c;
+$color-success: #5cb85c;
+
+@mixin font-text-default {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+@mixin font-text-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Roboto, sans-serif;
+}

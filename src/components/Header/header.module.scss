@@ -1,0 +1,44 @@
+@import '../../utils/variables';
+
+.header {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  @include font-text-default;
+
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 8px 24px;
+  margin-right: 20px;
+  background-color: $color-active;
+  border-radius: 8px;
+}
+
+.avatar {
+  box-sizing: content-box;
+  width: 40px;
+  height: 40px;
+  padding: 0 20px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGU+LnN0MXtmaWxsOiNmZmZ9PC9zdHlsZT48ZyBpZD0iU3ltYm9scyI+PGcgaWQ9Ikdyb3VwLTIiPjxnIGlkPSJmYWJpby1zcGluZWxsaS02OTU3NDQtdW5zcGxhc2giPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBzdHlsZT0iZmlsbDojMWUzZjZjIiBpZD0iTWFzayIvPjwvZz48ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5IDMwKSI+PGNpcmNsZSBpZD0iT3ZhbC04IiBjbGFzcz0ic3QxIiBjeD0iMjEiIGN5PSIxMC43IiByPSIxMC43Ii8+PHBhdGggaWQ9IlBhdGgtNCIgY2xhc3M9InN0MSIgZD0iTS44IDM3LjlDNC4yIDMwIDExIDI2IDIxIDI2czE2LjggNCAyMC4yIDExLjljLjMuOCAwIDEuNy0uOCAyLS4yLjEtLjQuMS0uNi4xSDIuMmMtLjggMC0xLjUtLjctMS41LTEuNSAwLS4yIDAtLjQuMS0uNnoiLz48L2c+PC9nPjwvZz48L3N2Zz4=');
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-left: 1px solid $color-border-default;
+}
+
+.username {
+  @include font-text-default;
+
+  color: $color-text-default;
+}
